@@ -20,3 +20,7 @@ function deviceInfo() {
 	navigator.notification.alert(info);
 	
 }
+
+function author(){
+	info = 'Agnieszka Tuleta';
+}
