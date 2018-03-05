@@ -27,3 +27,13 @@ function author(){
 	navigator.notification.alert(info);
 }
 
+function businessCard() {
+	info = 'Name                  : Agnieszka Tuleta' + '\n' + 
+		   'Email                 : agnieszka.t1994@gmail.com ' + '\n' +
+		   'Deans group number    : 209898 ' + '\n' + 
+		   'Field of study        : Informatyka Stosowana' + '\n' + 		   
+		   
+		  
+	
+	navigator.notification.alert(info);
+}
