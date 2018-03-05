@@ -26,3 +26,4 @@ function author(){
 	
 	navigator.notification.alert(info);
 }
+
