@@ -2,13 +2,20 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="js/pgb.js"></script>
 		<script src="cordova.js"></script>
 	</head>
 	<body onload="init()">
 		<h1>Hello World!</h1>
-		<p id="dp"></p>
-		<input type="button" onclick="deviceInfo()" value="Let me introduce myself!">
-		<input type="button" onclick="author()" value="Author">
+		<div id="container">
+			<div id="box>">
+				<input class="button" type="button" onclick="deviceInfo()" value="Let me introduce myself!">
+				<input class="button" type="button" onclick="author()" value="Author">
+				<input class="button" type="button" onclick="checkConnection()" value="Network">
+			</div>
+			<br/>
+			<div id="box2"><img src="img/coffee.gif" alt="Coffee"></div>
+		</div>
 	</body>
 </html>

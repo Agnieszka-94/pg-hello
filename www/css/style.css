@@ -1,0 +1,32 @@
+body {
+	background: #593C2C;
+	width: 100%;
+	margin: 25px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.button {
+	height: 30px;
+	background-color: #eab30b;
+	border: 1px solid #eab30b;
+}
+
+img {
+	margin-top: 25px;
+	height: 250px; 
+	width: 350px;
+}
+
+#container{
+	text-align: center;
+	width: 100%;
+}
+
+#box2 {
+	margin: 0 auto;
+}
+
