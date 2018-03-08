@@ -44,4 +44,4 @@ function author(){
     alert('Connection type: ' + states[networkState]);
 }
 
-checkConnection();
+
