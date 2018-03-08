@@ -4,7 +4,8 @@
 		id          = "myfirstapp"
         version     = "1.0.0" >
 
-    <name>First app</name>
+    <icon src="merge/android/favicon.png" platform="android" width="57" height="57" density="mdpi" />
+    <name>FirstApp</name>
     <description>My first mobile app</description>
     <author href="http://mypersonalwebsite.com" email="johnbrown@gmail.com">
 		John Brown
@@ -14,4 +15,6 @@
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
 	<plugin name="cordova-plugin-network-information" spec="~2.0.1"/>
+	<plugin name="cordova-plugin-splashscreen" spec="~5.0.2"/>
+
 </widget>
