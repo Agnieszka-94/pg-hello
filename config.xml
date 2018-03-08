@@ -13,5 +13,5 @@
 	
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
-
+	<plugin name="cordova plugin add cordova-plugin-network-information" />
 </widget>
