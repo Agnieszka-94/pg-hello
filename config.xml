@@ -4,7 +4,7 @@
 		id          = "myfirstapp"
         version     = "1.0.0" >
 
-    <icon src="merge/android/favicon.png" platform="android" width="57" height="57" density="mdpi" />
+    <icon src="merges/android/favicon.png" platform="android" width="57" height="57" density="mdpi" />
     <name>FirstApp</name>
     <description>My first mobile app</description>
     <author href="http://mypersonalwebsite.com" email="johnbrown@gmail.com">
