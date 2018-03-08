@@ -28,9 +28,9 @@ function author(){
 }
 
 
-	function checkConnection() {
+function checkConnection() {
     var networkState = navigator.connection.type;
-
+ 
     var states = {};
     states[Connection.UNKNOWN]  = 'Unknown connection';
     states[Connection.ETHERNET] = 'Ethernet connection';
@@ -40,8 +40,6 @@ function author(){
     states[Connection.CELL_4G]  = 'Cell 4G connection';
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
-
-    alert('Connection type: ' + states[networkState]);
+ 
+    navigator.notification.alert('Connection type: ' + states[networkState], 'Check connection', 'GOOD!');
 }
-
-
