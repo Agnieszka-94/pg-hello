@@ -41,7 +41,7 @@ function checkConnection() {
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
  
-    navigator.notification.alert('Connection type: ' + states[networkState], 'Check connection', 'GOOD!');
+    navigator.notification.alert('Connection type: ' + states[networkState], 'Check connection', 'Network!');
 }
 
 function motion() {
