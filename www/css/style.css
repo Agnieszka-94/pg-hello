@@ -7,26 +7,28 @@ body {
 h1 {
 	text-align: center;
 	color: #fff;
+	margin-bottom: 40px;
 }
 
 .button {
 	height: 30px;
 	background-color: #eab30b;
 	border: 1px solid #eab30b;
+	margin-bottom: 10px;
 }
 
 img {
-	margin-top: 25px;
+	margin-top: 50px;
 	height: 250px; 
 	width: 350px;
 }
 
 #container{
 	text-align: center;
-	width: 100%;
+	width: 80%;
+	margin: 0 auto;
 }
 
 #box2 {
 	margin: 0 auto;
 }
-
