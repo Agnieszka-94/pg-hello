@@ -1,13 +1,23 @@
 body {
-	background: #593C2C;
+	background: #303030;
 	width: 100%;
 	margin: 25px auto;
+	text-align: center;
+	letter-spacing: 1px;
 }
 
 h1 {
-	text-align: center;
 	color: #fff;
 	margin-bottom: 40px;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	color: #fff;
+	font-size: 20px;
 }
 
 .button {
@@ -16,24 +26,47 @@ h1 {
 	border: 1px solid #eab30b;
 	margin-bottom: 10px;
 	width:  200px;
+	border-radius: 10px;
 }
 
 img {
-	margin-top: 10px;
 	height: 250px; 
-	width: 350px;
+	width: 150px;
+}
+
+#box {
+	margin: auto;
+	float: left;
+}
+
+#box2 {
+	float: left;
+	width: 50%;
+	margin: auto;
+}
+
+#box3 {
+	clear: both;
 }
 
 #container{
-	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 }
 
-#box2 {
-	margin: 0 auto;
+#sendMessage {
+	border: 1px solid #303030;
 }
 
-.box {
-	margin: 0 auto;
+.txt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    border-radius: 5px;
 }
+
+#box-1 {background: #3095d3; border: 1px solid #3095d3;}
+#box-3 {background: #666666; border: 1px solid #666666;}
+#box-4 {background: #93c748; border: 1px solid #93c748;}
+#box-5 {background: #c34f4f; border: 1px solid #c34f4f;}

@@ -61,3 +61,34 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 
 function contactlist () {
 }
+
+var app = {
+    sendSms: function() {
+        var number = document.getElementById('numberTxt').value;
+        var message = document.getElementById('messageTxt').value;
+        console.log("number=" + number + ", message= " + message);
+
+        //CONFIGURATION
+        var options = {
+            replaceLineBreaks: false, // true to replace \n by a new line, false by default
+            android: {
+                intent: ''  // send SMS with the native android SMS messaging
+                //intent: '' // send SMS without open any other app
+            }
+        };
+
+        var success = function () { alert('Message sent successfully'); };
+        var error = function (e) { alert('Message Failed:' + e); };
+        sms.send(number, message, options, success, error);
+    }
+
+    function businessCard() {
+    info =  'Name  : Agnieszka Tuleta'                    + '\n' + 
+            'E-mail : agnieszka.t1994@gmail.com'          + '\n' + 
+            'Field of study : Informatyka Stosowana'      + '\n' +
+            'Deans group number : 209898'          + '\n'; 
+
+    
+    
+            navigator.notification.alert('\n'+info, alertDismissed, 'About me', 'Good!');
+}

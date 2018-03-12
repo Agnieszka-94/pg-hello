@@ -6,18 +6,29 @@
 		<script src="js/pgb.js"></script>
 		<script src="cordova.js"></script>
 	</head>
+
 	<body onload="init()">
-		<h1>My first mobile app!</h1>
+		<a href="index.html"><h1>Hi! It is my first mobile app!</h1></a><br/>
 		<div id="container">
-			<div id="box>">
-				<div id="box1" class="box"><input class="button" type="button" onclick="deviceInfo()" value="Let me introduce myself!"></div>
-				<div id="box1" class="box"><input class="button" type="button" onclick="author()" value="Author"></div>
-				<div id="box1" class="box"><input class="button" type="button" onclick="checkConnection()" value="Network"></div>
-				<div id="box1" class="box"><input class="button" type="button" onclick="motion()" value="Motion"></div>
-				<div id="box1" class="box"><input class="button" type="button" onclick="contactlist()" value="Contacts"></div>
+			<div id="box"><img src="img/person.gif" alt="Person"></div>
+
+			<div id="box2>">
+				<div class="box"><input id="box-1" class="button" type="button" onclick="businessCard()" value="Business Card"></div>
+				<div class="box"><input id="box-2" class="button" type="button" onclick="deviceInfo()" value="Device"></div>
+				<div class="box"><input id="box-3" class="button" type="button" onclick="checkConnection()" value="Network"></div>
+				<div class="box"><input id="box-4" class="button" type="button" onclick="motion()" value="Motion"></div>
+				<div class="box"><input id="box-5" class="button" type="button" onclick="contactlist()" value="Contacts"></div>
 			</div>
-			<br/>
-			<div id="box2"><img src="img/coffee.gif" alt="Coffee"></div>
+
+			<div id="box3">
+				<p>Send SMS</p>
+				<form>
+			        <input class="txt" id="numberTxt" placeholder="Wprowadź numer telefonu" value="" type="tel" />
+					<textarea class="txt" id="messageTxt" placeholder="Wpisz wiadomość"></textarea>
+					<input class="txt" id="sendMessage" type="button" onclick="app.sendSms()" value="Wyślij" />
+	            </form>
+        	</div>
+
 		</div>
 	</body>
 </html>

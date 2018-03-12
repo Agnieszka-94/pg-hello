@@ -7,15 +7,32 @@
     <icon src="merges/android/favicon.png" platform="android" width="57" height="57" density="mdpi" />
     <name>FirstApp</name>
     <description>My first mobile app</description>
-    <author href="http://mypersonalwebsite.com" email="johnbrown@gmail.com">
-		John Brown
+    <author href="https://github.com/Agnieszka-94" email="agnieszka.t1994@gmail.com">
+		Agnieszka Tuleta
 	</author>
 	<platform name="android" />
+
+	<preference name = "SplashScreenDelay" value = "5000" />
+	<preference name="SplashMaintainAspectRatio" value="true" />
+
+	<platform name="android">
+<!-- 	<splash src="merge/android/screen.png" density="land-hdpi"/>
+		<splash src="merge/android/screen.png" density="land-ldpi"/>
+		<splash src="merge/android/screen.png" density="land-mdpi"/>
+		<splash src="merge/android/screen.png" density="land-xhdpi"/>
+
+		<splash src="merge/android/screen.png" density="port-hdpi"/>
+		<splash src="merge/android/screen.png" density="port-ldpi"/>
+		<splash src="merge/android/screen.png" density="port-mdpi"/>
+		<splash src="merge/android/screen.png" density="port-xhdpi"/> -->
+	</platform>
 	
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
 	<plugin name="cordova-plugin-network-information" spec="~2.0.1" />
 	<plugin name="cordova-plugin-device-motion" spec="2.0.0" />
 	<plugin name="cordova-plugin-contacts" spec="1.0.0" />
+	<plugin name="cordova-sms-plugin" spec="0.1.11"/>
+	<plugin name="cordova-plugin-splashscreen" spec="4.0.0"/>
 
 </widget>
