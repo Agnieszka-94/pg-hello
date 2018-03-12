@@ -6,29 +6,32 @@ function onDeviceReady() {
 	navigator.notification.beep(1);
 }
 
+function alertDismissed() {
+    navigator.notification.beep(1);
+}
+
+function deviceInfo() {
+
+    info =  'Device Name    : '     + device.name     + '\n' + 
+            'Device Cordova : '  + device.cordova   + '\n' + 
+            'Device Platform: ' + device.platform   + '\n' + 
+            'Device UUID    : '     + device.uuid     + '\n' + 
+            'Device Model   : '    + device.model     + '\n' + 
+            'Device Version : '  + device.version   + '\n';
+
+    navigator.notification.alert('\n' + info, alertDismissed, 'Hi, I am your smartphone :)', 'Good!');
+    
+}
+
 function businessCard() {
     info =  'Name  : Agnieszka Tuleta'                    + '\n' + 
             'E-mail : agnieszka.t1994@gmail.com'          + '\n' + 
             'Field of study : Informatyka Stosowana'      + '\n' +
             'Deans group number : 209898'          + '\n'; 
-    
+
 navigator.notification.alert('\n'+info, alertDismissed, 'About me', 'Good!');
 }
 
-function deviceInfo() {
-
-	info =  'Hi, I am your smartphone :-)' + '\n' +
-			'=====' + '\n' +
-			'Device Name    : '     + device.name     + '\n' + 
-			'Device Cordova : '  + device.cordova + '\n' + 
-			'Device Platform: ' + device.platform + '\n' + 
-			'Device UUID    : '     + device.uuid     + '\n' + 
-			'Device Model   : '    + device.model     + '\n' + 
-			'Device Version : '  + device.version  + '\n';
-
-	navigator.notification.alert(info);
-	
-}
 
 function checkConnection() {
     var networkState = navigator.connection.type;
@@ -61,7 +64,6 @@ function onError() {
 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 }
 
-
 function contactlist () {
 }
 
@@ -85,3 +87,4 @@ var app = {
         sms.send(number, message, options, success, error);
     }
 
+};
