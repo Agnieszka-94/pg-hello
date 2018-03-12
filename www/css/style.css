@@ -11,10 +11,11 @@ h1 {
 }
 
 .button {
-	height: 30px;
+	height: 50px;
 	background-color: #eab30b;
 	border: 1px solid #eab30b;
 	margin-bottom: 10px;
+	width:  200px;
 }
 
 img {
@@ -30,5 +31,9 @@ img {
 }
 
 #box2 {
+	margin: 0 auto;
+}
+
+.box {
 	margin: 0 auto;
 }
