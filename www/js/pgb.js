@@ -6,6 +6,15 @@ function onDeviceReady() {
 	navigator.notification.beep(1);
 }
 
+function businessCard() {
+    info =  'Name  : Agnieszka Tuleta'                    + '\n' + 
+            'E-mail : agnieszka.t1994@gmail.com'          + '\n' + 
+            'Field of study : Informatyka Stosowana'      + '\n' +
+            'Deans group number : 209898'          + '\n'; 
+    
+navigator.notification.alert('\n'+info, alertDismissed, 'About me', 'Good!');
+}
+
 function deviceInfo() {
 
 	info =  'Hi, I am your smartphone :-)' + '\n' +
@@ -20,13 +29,6 @@ function deviceInfo() {
 	navigator.notification.alert(info);
 	
 }
-
-function author(){
-	info2 = 'Agnieszka Tuleta';
-	
-	navigator.notification.alert(info2);
-}
-
 
 function checkConnection() {
     var networkState = navigator.connection.type;
@@ -59,6 +61,7 @@ function onError() {
 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 }
 
+
 function contactlist () {
 }
 
@@ -82,13 +85,3 @@ var app = {
         sms.send(number, message, options, success, error);
     }
 
-    function businessCard() {
-    info =  'Name  : Agnieszka Tuleta'                    + '\n' + 
-            'E-mail : agnieszka.t1994@gmail.com'          + '\n' + 
-            'Field of study : Informatyka Stosowana'      + '\n' +
-            'Deans group number : 209898'          + '\n'; 
-
-    
-    
-            navigator.notification.alert('\n'+info, alertDismissed, 'About me', 'Good!');
-}
