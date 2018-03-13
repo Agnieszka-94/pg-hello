@@ -38,7 +38,7 @@ img {height: 300px; width: 150px;}
 
 #container{width: 100%; margin: 0 auto;}
 
-#sendMessage {border: 1px solid #9b0303; background: #9b0303; color: #fff;}
+#sendMessage {border: 1px solid #eab30b; color: #303030; box-shadow: 1px 1px 5px #eab30b}
 
 .txt {
     display: block;
