@@ -12,7 +12,6 @@
 	</author>
 	<platform name="android" />
 
-	<preference name="SplashScreen" value="www/img/person.gif" />
 	<preference name = "SplashScreenDelay" value = "3000" />
 	<preference name="SplashMaintainAspectRatio" value="true" />
 
