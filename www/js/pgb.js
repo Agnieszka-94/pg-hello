@@ -62,6 +62,7 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 }
 
 function contactlist() {
+    list(success, fail)
     navigator.contactsPhoneNumbers.list(function(contacts) {
       console.log(contacts.length + ' contacts found');
       for(var i = 0; i < contacts.length; i++) {
@@ -71,9 +72,8 @@ function contactlist() {
             console.log("===> " + phone.type + "  " + phone.number + " (" + phone.normalizedNumber+ ")");
          }
       }
-   }, function(error) {
-      console.error(error);
-   });
+   }, 
+   function(error) {console.error(error);});
 }
 
 var app = {
