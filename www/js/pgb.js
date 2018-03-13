@@ -61,7 +61,7 @@ function onError() {
 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 }
 
-function contactlist () {
+function contactlist() {
     navigator.contactsPhoneNumbers.list(function(contacts) {
       console.log(contacts.length + ' contacts found');
       for(var i = 0; i < contacts.length; i++) {
@@ -95,6 +95,4 @@ var app = {
         var error = function (e) { alert('Message Failed:' + e); };
         sms.send(number, message, options, success, error);
     }
-
-
 };

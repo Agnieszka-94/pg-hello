@@ -52,3 +52,30 @@ img {height: 300px; width: 150px;}
 #box-3 {background: #666666; border: 1px solid #666666;}
 #box-4 {background: #93c748; border: 1px solid #93c748;}
 #box-5 {background: #c34f4f; border: 1px solid #c34f4f;}
+
+a {text-decoration: none;}
+
+.card {
+	margin: 10px;
+	width:  230px;
+	height: 130px;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+.c-text {
+	float:left;
+	width:230px;
+	height:142px;
+}
+
+.c-p {
+	font-size: 13px;
+	color: #000;
+}
+
+#card1 {background-color: #3095d3;}
+#card2 {background-color: #eab30b;}
+#card3 {background-color: #666666;}
+#card4 {background-color: #93c748;}
+#card4 {background-color: #c34f4f;}

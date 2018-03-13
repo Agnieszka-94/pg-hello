@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+	</head>
+	<body onload="init()">
+		<a href="index.html"><h1>Hello!</h1></a><p>It's my business card</p>	
+		<div id="container">
+			<div id="box"><img src="img/person.gif" alt="Person"></div>
+
+			<div id="card1" class="card">
+				<div class="c-text">
+					<h3>Name</h3>
+					<p class="c-p">Agnieszka Tuleta</p>
+				</div>
+			</div>
+
+			<div id="card2" class="card">
+				<div class="c-text">
+					<h3>Email</h3>
+					<p class="c-p">agnieszka.t1994@gmail.com</p>
+				</div>
+			</div>		
+
+			<div id="card3" class="card">
+				<div class="c-text">
+					<h3>Deans group number</h3>
+					<p class="c-p">KrDUIs1012</p>
+				</div>
+			</div>
+
+			<div id="card4" class="card">
+				<div class="c-text">
+					<h3>Field of study</h3>
+					<p class="c-p">Informatyka Stosowana</p>
+				</div>
+			</div>
+
+			<div id="box3">
+				<p id="d_text">Send SMS</p>
+				<form>
+			        <input class="txt" id="numberTxt" placeholder="Enter mobile number" value="" type="tel" />
+					<textarea class="txt" id="messageTxt" placeholder="Message"></textarea>
+					<input class="txt" id="sendMessage" type="button" onclick="app.sendSms()" value="Send" />
+	            </form>
+        	</div>
+						
+		</div>
+	</body>
+</html>
