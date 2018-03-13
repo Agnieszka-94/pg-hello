@@ -32,7 +32,7 @@
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
 	<plugin name="cordova-plugin-network-information" spec="~2.0.1" />
 	<plugin name="cordova-plugin-device-motion" spec="2.0.0" />
-	<plugin name="cordova-plugin-contacts" spec="1.0.0" />
+	<plugin name="cordova-plugin-contacts-phonenumbers" spec="0.0.10"/>
 	<plugin name="cordova-sms-plugin" spec="0.1.11"/>
 	<plugin name="cordova-plugin-splashscreen" spec="4.0.0"/>
 
