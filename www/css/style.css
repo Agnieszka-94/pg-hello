@@ -15,8 +15,8 @@ p {
 	font-size: 20px;
 	margin-bottom: 25px;
 }
-
-span {color: #fff;}
+ 
+ #d_text {text-shadow: 2px 2px 5px #eab30b}
 
 .button {
 	height: 50px;
@@ -29,11 +29,7 @@ span {color: #fff;}
 
 img {height: 300px; width: 150px;}
 
-#box {float: left;}
-
-#box2 {width: 50%; float: left;}
-
-#box3 {clear: both; margin-top: 20px;}
+#box3 {margin-top: 20px;}
 
 #container{width: 100%; margin: 0 auto;}
 
