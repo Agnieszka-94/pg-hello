@@ -30,16 +30,11 @@ span {color: #fff;}
 
 img {height: 250px; width: 150px;}
 
-#box {margin: auto; float: left;
-}
+#box {margin: auto;}
 
-#box2 {
-	float: left;
-	width: 50%;
-	margin: auto;
-}
+#box2 {margin: auto;}
 
-#box3 {clear: both;}
+#box3 {clear: both; margin-top: 20px;}
 
 #container{width: 100%; margin: 0 auto;}
 
