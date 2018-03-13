@@ -12,7 +12,7 @@
 	</author>
 	<platform name="android" />
 
-	<preference name = "SplashScreenDelay" value = "5000" />
+	<preference name = "SplashScreenDelay" value = "3000" />
 	<preference name="SplashMaintainAspectRatio" value="true" />
 
 	<platform name="android">

@@ -19,17 +19,20 @@ p {
  #d_text {text-shadow: 2px 2px 5px #eab30b}
 
 .button {
-	height: 50px;
+	height: 100px;
 	background-color: #eab30b;
 	border: 1px solid #eab30b;
 	margin-bottom: 20px;
-	width:  180px;
+	width:  150px;
 	border-radius: 10px;
 }
 
 img {height: 300px; width: 150px;}
 
-#box3 {margin-top: 20px;}
+#box3 {
+	margin-top: 20px;
+	border-top: 4px dotted #fff;
+}
 
 #container{width: 100%; margin: 0 auto;}
 
