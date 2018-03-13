@@ -16,7 +16,7 @@ function deviceInfo() {
             'Device Model   : '    + device.model     + '\n' + 
             'Device Version : '  + device.version   + '\n';
 
-    navigator.notification.alert('\n' + info, 'Your device', 'OK');
+    navigator.notification.alert('\n' + info, 'deviceInfo', 'Your device');
     
 }
 
@@ -26,7 +26,7 @@ function businessCard() {
             'Field of study : Informatyka Stosowana'      + '\n' +
             'Deans group number : KrDUIs1012'          + '\n'; 
 
-navigator.notification.alert('\n'+info, 'About me', 'OK');
+navigator.notification.alert('\n'+info, 'businessCard', 'Business Card');
 }
 
 
@@ -48,14 +48,14 @@ function checkConnection() {
 
 function motion() {
 function onSuccess(acceleration) {
-    alert('Acceleration X: ' + acceleration.x + '\n' +
+   navigator.notification.alert('Acceleration X: ' + acceleration.x + '\n' +
           'Acceleration Y: ' + acceleration.y + '\n' +
           'Acceleration Z: ' + acceleration.z + '\n' +
           'Timestamp: '      + acceleration.timestamp + '\n');
 }
 
 function onError() {
-    alert('onError!');
+    navigator.notification.alert('onError!');
 }
 
 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
