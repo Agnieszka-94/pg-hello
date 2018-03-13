@@ -61,10 +61,31 @@ function onError() {
 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 }
 
+document.addEventListener ("deviceready", getContactList, false);
+
 function contactlist() {
-    window.NativeContactPicker.pickContact(function(e) {
-    console.log("parseLastNineDigits: ", e);
-    });
+    // window.NativeContactPicker.pickContact(function(e) {
+    // console.log("parseLastNineDigits: ", e);
+    // });
+function getContactList () {
+      var contactList = new ContactFindOptions ();
+      contactList.filter = "";
+      contactList.multiple = true;
+      var fields = ["*"]; // "*" zwróci wszystkie pola kontaktowe
+      navigator.contacts.find (fields, getContactFields, contactList);
+  }
+
+function getContactFields (contacts) {
+         dla (var i = 0; i <contacts.length; i ++)
+        {
+               alert (contacts.length);
+               alert ("Nazwa:" + kontakty [i] .displayName + "\ n" +
+                         "Urodziny:" + kontakty [i] .birthday)
+                        
+dla (var j = 0; j <contacts [i] .phoneNumbers.length; j ++) {
+                               alert ("Typ:" + kontakty [i] .phoneNumbers [j] .type + "\ n" +
+                                         "Wartość:" + kontakty [i] .phoneNumbers [j] .value);
+}}}
 }
 
 var app = {
