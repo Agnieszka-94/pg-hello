@@ -19,12 +19,14 @@ p {
  #d_text {text-shadow: 2px 2px 5px #eab30b}
 
 .button {
-	height: 100px;
+	height: 120px;
 	background-color: #eab30b;
 	border: 1px solid #eab30b;
 	margin-bottom: 20px;
-	width:  150px;
+	width:  250px;
 	border-radius: 10px;
+	font-size: 18px;
+	letter-spacing: 2px;
 }
 
 img {height: 300px; width: 150px;}
