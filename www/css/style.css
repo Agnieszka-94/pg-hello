@@ -22,17 +22,16 @@ span {color: #fff;}
 	height: 50px;
 	background-color: #eab30b;
 	border: 1px solid #eab30b;
-	margin-bottom: 10px;
-	width:  200px;
+	margin-bottom: 20px;
+	width:  180px;
 	border-radius: 10px;
-
 }
 
-img {height: 250px; width: 150px;}
+img {height: 300px; width: 150px;}
 
-#box {margin: auto;}
+#box {float: left;}
 
-#box2 {margin: auto;}
+#box2 {width: 50%; float: left;}
 
 #box3 {clear: both; margin-top: 20px;}
 

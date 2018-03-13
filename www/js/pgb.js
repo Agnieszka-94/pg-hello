@@ -24,7 +24,7 @@ function businessCard() {
     info =  'Name  : Agnieszka Tuleta'                    + '\n' + 
             'E-mail : agnieszka.t1994@gmail.com'          + '\n' + 
             'Field of study : Informatyka Stosowana'      + '\n' +
-            'Deans group number : 209898'          + '\n'; 
+            'Deans group number : KrDUIs1012'          + '\n'; 
 
 navigator.notification.alert('\n'+info, 'About me', 'OK');
 }
