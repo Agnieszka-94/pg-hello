@@ -3,22 +3,20 @@ body {
 	width: 100%;
 	margin: 25px auto;
 	text-align: center;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
-h1 {
-	color: #fff;
-	margin-bottom: 40px;
-}
-
-a {
-	text-decoration: none;
-}
+h1 {color: #fff;
+	margin-bottom: 20px; 
+	text-shadow: 1px 1px 2px #9b0303, 0 0 25px #9b0303, 0 0 5px #9b0303;}
 
 p {
-	color: #fff;
+	color: #fff; 
 	font-size: 20px;
+	margin-bottom: 25px;
 }
+
+span {color: #fff;}
 
 .button {
 	height: 50px;
@@ -27,16 +25,12 @@ p {
 	margin-bottom: 10px;
 	width:  200px;
 	border-radius: 10px;
+
 }
 
-img {
-	height: 250px; 
-	width: 150px;
-}
+img {height: 250px; width: 150px;}
 
-#box {
-	margin: auto;
-	float: left;
+#box {margin: auto; float: left;
 }
 
 #box2 {
@@ -45,18 +39,11 @@ img {
 	margin: auto;
 }
 
-#box3 {
-	clear: both;
-}
+#box3 {clear: both;}
 
-#container{
-	width: 100%;
-	margin: 0 auto;
-}
+#container{width: 100%; margin: 0 auto;}
 
-#sendMessage {
-	border: 1px solid #303030;
-}
+#sendMessage {border: 1px solid #303030;}
 
 .txt {
     display: block;

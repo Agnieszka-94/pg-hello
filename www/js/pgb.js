@@ -6,9 +6,6 @@ function onDeviceReady() {
 	navigator.notification.beep(1);
 }
 
-function alertDismissed() {
-    navigator.notification.beep(1);
-}
 
 function deviceInfo() {
 
@@ -19,7 +16,7 @@ function deviceInfo() {
             'Device Model   : '    + device.model     + '\n' + 
             'Device Version : '  + device.version   + '\n';
 
-    navigator.notification.alert('\n' + info, alertDismissed, 'Hi, I am your smartphone :)', 'Good!');
+    navigator.notification.alert('\n' + info, 'Your device', 'OK');
     
 }
 
@@ -29,7 +26,7 @@ function businessCard() {
             'Field of study : Informatyka Stosowana'      + '\n' +
             'Deans group number : 209898'          + '\n'; 
 
-navigator.notification.alert('\n'+info, alertDismissed, 'About me', 'Good!');
+navigator.notification.alert('\n'+info, 'About me', 'OK');
 }
 
 
@@ -46,7 +43,7 @@ function checkConnection() {
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
  
-    navigator.notification.alert('Connection type: ' + states[networkState], 'Check connection', 'Network!');
+    navigator.notification.alert('Connection type: ' + states[networkState], 'Check connection', 'Network');
 }
 
 function motion() {
